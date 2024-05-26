@@ -1,0 +1,29 @@
+{
+  "name": "proxy-rpc",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "RPC proxy for WVM",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/proxy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weavevm/proxy-rpc.git"
+  },
+  "keywords": [
+    "RPC",
+    "WVM"
+  ],
+  "author": "charmful0x",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weavevm/proxy-rpc/issues"
+  },
+  "homepage": "https://github.com/weavevm/proxy-rpc#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
