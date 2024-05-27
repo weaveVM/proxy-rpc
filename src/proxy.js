@@ -8,6 +8,9 @@ const RPC_URL = "http://34.141.88.80:8545";
 
 app.use(bodyParser.json());
 
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+
 app.post("/", async (req, res) => {
   try {
     // Forward the incoming request to the RPC server
