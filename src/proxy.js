@@ -8,8 +8,8 @@ const RPC_URL = "http://34.141.88.80:8545";
 
 app.use(bodyParser.json());
 
-app.use(bodyParser.json({ limit: '50mb' }));
-app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+app.use(bodyParser.json({ limit: "100m" }));
+app.use(bodyParser.urlencoded({limit: "100mb", extended: true, parameterLimit:50000}));
 
 app.post("/", async (req, res) => {
   try {
