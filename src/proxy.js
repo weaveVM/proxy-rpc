@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const RPC_URL = "http://34.141.88.80:8545";
+const RPC_URL = "https://testnet-rpc.wvm.dev";
 
 app.use(bodyParser.json());
 
